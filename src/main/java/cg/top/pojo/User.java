@@ -1,10 +1,8 @@
 package cg.top.pojo;
 
-import com.baomidou.mybatisplus.annotation.*;
+import lombok.Data;
 
 import java.io.Serializable;
-
-import lombok.Data;
 
 /**
  * @TableName news_user
@@ -19,9 +17,9 @@ public class User implements Serializable {
     private String userPwd;
 
     private String nickName;
-    @Version
+
     private Integer version;
-    @TableLogic
+
     private Integer isDeleted;
 
     private static final long serialVersionUID = 1L;

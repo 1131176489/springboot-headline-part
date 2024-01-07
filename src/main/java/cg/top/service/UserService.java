@@ -2,8 +2,6 @@ package cg.top.service;
 
 import cg.top.pojo.User;
 import cg.top.utils.Result;
-import com.baomidou.mybatisplus.extension.service.IService;
-import org.apache.ibatis.annotations.Mapper;
 
 /**
  * @author 11311
@@ -11,8 +9,9 @@ import org.apache.ibatis.annotations.Mapper;
  * @createDate 2023-12-17 17:23:56
  */
 
-public interface UserService extends IService<User> {
+public interface UserService {
 
     Result login(User user);
 
+    Result getUserInfo();
 }

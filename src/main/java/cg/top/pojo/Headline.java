@@ -1,17 +1,16 @@
 package cg.top.pojo;
 
-import com.baomidou.mybatisplus.annotation.*;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
-import lombok.Data;
 
 /**
  * @TableName news_headline
  */
 @Data
 public class Headline implements Serializable {
-    @TableId
+
     private Integer hid;
 
     private String title;
@@ -27,9 +26,9 @@ public class Headline implements Serializable {
     private Date createTime;
 
     private Date updateTime;
-    @Version
+
     private Integer version;
-    @TableLogic
+
     private Integer isDeleted;
 
     private static final long serialVersionUID = 1L;

@@ -1,7 +1,6 @@
 package cg.top.mapper;
 
 import cg.top.pojo.User;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -11,8 +10,8 @@ import org.apache.ibatis.annotations.Mapper;
  * @Entity cg.top.pojo.User
  */
 @Mapper
-public interface UserMapper extends BaseMapper<User> {
-
+public interface UserMapper {
+    User selectOneByUsername(String username);
 }
 
 
